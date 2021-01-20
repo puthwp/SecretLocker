@@ -13,6 +13,7 @@
 		9678B9E825B8703400CC14C9 /* ItemsInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9678B9E725B8703400CC14C9 /* ItemsInteractor.swift */; };
 		9678B9ED25B871B700CC14C9 /* VaultItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9678B9EC25B871B700CC14C9 /* VaultItem.swift */; };
 		9678B9FB25B8943E00CC14C9 /* BaseViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9678B9FA25B8943E00CC14C9 /* BaseViewController.swift */; };
+		9678BA0025B89BBD00CC14C9 /* ItemsPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9678B9FF25B89BBD00CC14C9 /* ItemsPresenter.swift */; };
 		96D9B00425A6411100C4D853 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 96D9B00325A6411100C4D853 /* AppDelegate.swift */; };
 		96D9B00625A6411100C4D853 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 96D9B00525A6411100C4D853 /* SceneDelegate.swift */; };
 		96D9B00825A6411100C4D853 /* ItemsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 96D9B00725A6411100C4D853 /* ItemsViewController.swift */; };
@@ -54,6 +55,7 @@
 		9678B9E725B8703400CC14C9 /* ItemsInteractor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ItemsInteractor.swift; sourceTree = "<group>"; };
 		9678B9EC25B871B700CC14C9 /* VaultItem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VaultItem.swift; sourceTree = "<group>"; };
 		9678B9FA25B8943E00CC14C9 /* BaseViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseViewController.swift; sourceTree = "<group>"; };
+		9678B9FF25B89BBD00CC14C9 /* ItemsPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ItemsPresenter.swift; sourceTree = "<group>"; };
 		96D9B00025A6411100C4D853 /* SecretLocker.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SecretLocker.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		96D9B00325A6411100C4D853 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		96D9B00525A6411100C4D853 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -158,6 +160,7 @@
 				96D9B00725A6411100C4D853 /* ItemsViewController.swift */,
 				9678B9FA25B8943E00CC14C9 /* BaseViewController.swift */,
 				9678B9E725B8703400CC14C9 /* ItemsInteractor.swift */,
+				9678B9FF25B89BBD00CC14C9 /* ItemsPresenter.swift */,
 				9678B9EC25B871B700CC14C9 /* VaultItem.swift */,
 				96D9B04125A648AE00C4D853 /* PhotoCell.swift */,
 				96D9B00925A6411100C4D853 /* Main.storyboard */,
@@ -400,6 +403,7 @@
 				96D9B00825A6411100C4D853 /* ItemsViewController.swift in Sources */,
 				9678B9ED25B871B700CC14C9 /* VaultItem.swift in Sources */,
 				96D9B04225A648AE00C4D853 /* PhotoCell.swift in Sources */,
+				9678BA0025B89BBD00CC14C9 /* ItemsPresenter.swift in Sources */,
 				96D9B03725A6426A00C4D853 /* Constants.swift in Sources */,
 				9678B9E825B8703400CC14C9 /* ItemsInteractor.swift in Sources */,
 				9678B9FB25B8943E00CC14C9 /* BaseViewController.swift in Sources */,

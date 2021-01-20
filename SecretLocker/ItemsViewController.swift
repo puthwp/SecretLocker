@@ -12,6 +12,10 @@ import Photos
 import RNCryptor
 import ANActivityIndicator
 
+protocol ItemsViewLogic {
+    func displayItems(items :[PresentItem])
+}
+
 class ItemsViewController: BaseViewController {
 
     @IBOutlet weak var itemCollection: UICollectionView!
@@ -27,14 +31,17 @@ class ItemsViewController: BaseViewController {
     }
     
     let intoractor = ItemsIntoractor()
+    let presenter = ItemsPresenter()
     
-    private var allItems: [VaultItem]?
+    private var allItems: [PresentItem]?
     
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view.
         itemCollection.dataSource = self
         itemCollection.delegate = self
+        presenter.viewController = self
+        intoractor.presenter = presenter
     
         let layout = BouncyLayout(style: .subtle)
         itemCollection.setCollectionViewLayout(layout, animated: false)
@@ -42,8 +49,7 @@ class ItemsViewController: BaseViewController {
     
     override func viewWillAppear(_ animated: Bool) {
         super.viewWillAppear(animated)
-        allItems = intoractor.getAllItems()
-        itemCollection.reloadData()
+        intoractor.getAllItems()
     }
     
     override func viewDidLayoutSubviews() {
@@ -86,16 +92,18 @@ extension ItemsViewController: TatsiPickerViewControllerDelegate, UINavigationCo
     func pickerViewController(_ pickerViewController: TatsiPickerViewController, didPickAssets assets: [PHAsset]) {
         showLoading()
         pickerViewController.dismiss(animated: true, completion:{
-            self.intoractor.didReciepItems(assets: assets,onComplete: { [weak self] in
-                self?.allItems = self?.intoractor.getAllItems()
-                self?.itemCollection.reloadData()
-                self?.hideLoading()
-            })            
+            self.intoractor.didReciepItems(assets: assets)            
         })
         
     }
-    
+}
 
+extension ItemsViewController: ItemsViewLogic{
+    func displayItems(items: [PresentItem]) {
+        allItems = items
+        itemCollection.reloadData()
+        hideLoading()
+    }
 }
 
 extension ItemsViewController: UICollectionViewDelegateFlowLayout {
@@ -135,17 +143,7 @@ extension ItemsViewController: UICollectionViewDataSource {
               let item = allItems?[indexPath.row] else {
             return UICollectionViewCell()
         }
-        let filePath = (NSSearchPathForDirectoriesInDomains(.documentDirectory, .userDomainMask, true).first ?? "") + (item.filePath ?? "")
-        let imageUrl = URL(fileURLWithPath: filePath)
-        do{
-            let encryptedImageData = try Data(contentsOf: imageUrl)
-            let rawImage = try! RNCryptor.decrypt(data: encryptedImageData, withPassword: "MAXXX")
-            let image = UIImage(data: rawImage)
-            cell.thumbnail.image = image
-        }catch{
-            print(error)
-        }
-        
+        cell.thumbnail.image = item.thumbnail
         cell.contentView.backgroundColor = UIColor.placeholderText
         return cell
     }

@@ -21,3 +21,8 @@ enum FileType {
     case Video
     case Document
 }
+
+class Directory{
+    static let FullResFolder = "/scl/"
+    static let ThumbnailFolder = "/scl_thb/"    
+}
