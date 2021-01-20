@@ -20,7 +20,7 @@
                             <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" dataMode="prototypes" translatesAutoresizingMaskIntoConstraints="NO" id="4GZ-eW-Isc">
                                 <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                                 <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                <collectionViewFlowLayout key="collectionViewLayout" automaticEstimatedItemSize="YES" minimumLineSpacing="10" minimumInteritemSpacing="10" id="OUK-PH-u5R">
+                                <collectionViewFlowLayout key="collectionViewLayout" minimumLineSpacing="10" minimumInteritemSpacing="10" id="uVi-kh-cAH">
                                     <size key="itemSize" width="128" height="128"/>
                                     <size key="headerReferenceSize" width="0.0" height="0.0"/>
                                     <size key="footerReferenceSize" width="0.0" height="0.0"/>
@@ -33,22 +33,39 @@
                                         <collectionViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" id="R3e-cR-6X9">
                                             <rect key="frame" x="0.0" y="0.0" width="128" height="128"/>
                                             <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="VW8-Ok-uiI">
+                                                    <rect key="frame" x="0.0" y="0.0" width="128" height="128"/>
+                                                </imageView>
+                                            </subviews>
                                             <color key="backgroundColor" systemColor="placeholderTextColor"/>
+                                            <constraints>
+                                                <constraint firstAttribute="bottom" secondItem="VW8-Ok-uiI" secondAttribute="bottom" id="0He-0I-yU2"/>
+                                                <constraint firstItem="VW8-Ok-uiI" firstAttribute="leading" secondItem="R3e-cR-6X9" secondAttribute="leading" id="URa-dF-tph"/>
+                                                <constraint firstAttribute="trailing" secondItem="VW8-Ok-uiI" secondAttribute="trailing" id="WTZ-jy-XVQ"/>
+                                                <constraint firstItem="VW8-Ok-uiI" firstAttribute="top" secondItem="R3e-cR-6X9" secondAttribute="top" id="dv8-OR-5uk"/>
+                                            </constraints>
                                         </collectionViewCellContentView>
+                                        <connections>
+                                            <outlet property="thumbnail" destination="VW8-Ok-uiI" id="dxh-hP-0s8"/>
+                                        </connections>
                                     </collectionViewCell>
                                 </cells>
                             </collectionView>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="0rV-E0-oHO">
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="0rV-E0-oHO">
                                 <rect key="frame" x="304" y="752" width="80" height="80"/>
                                 <color key="backgroundColor" systemColor="systemGreenColor"/>
                                 <constraints>
                                     <constraint firstAttribute="width" secondItem="0rV-E0-oHO" secondAttribute="height" multiplier="1:1" id="5y1-sS-xqX"/>
                                     <constraint firstAttribute="height" constant="80" id="PK7-Fy-Oap"/>
                                 </constraints>
-                                <fontDescription key="fontDescription" type="system" weight="ultraLight" pointSize="60"/>
-                                <state key="normal" title="+">
+                                <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <state key="normal" image="plus" catalog="system">
                                     <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 </state>
+                                <connections>
+                                    <action selector="addButtonHandler:" destination="BYZ-38-t0r" eventType="touchUpInside" id="KUn-g7-LwX"/>
+                                </connections>
                             </button>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
@@ -63,6 +80,7 @@
                         </constraints>
                     </view>
                     <connections>
+                        <outlet property="addButton" destination="0rV-E0-oHO" id="dyK-VT-SCd"/>
                         <outlet property="itemCollection" destination="4GZ-eW-Isc" id="6fb-xA-UjU"/>
                     </connections>
                 </viewController>
@@ -80,6 +98,7 @@
         </scene>
     </scenes>
     <resources>
+        <image name="plus" catalog="system" width="128" height="113"/>
         <systemColor name="placeholderTextColor">
             <color red="0.23529411764705882" green="0.23529411764705882" blue="0.2627450980392157" alpha="0.29999999999999999" colorSpace="custom" customColorSpace="sRGB"/>
         </systemColor>

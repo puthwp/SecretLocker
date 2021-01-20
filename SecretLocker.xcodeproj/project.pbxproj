@@ -3,10 +3,16 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 52;
 	objects = {
 
 /* Begin PBXBuildFile section */
+		2EF57B1BF3BCAA5D8B629423 /* libPods-SecretLocker.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 147C14EAFC4FE916A8C0570F /* libPods-SecretLocker.a */; };
+		964D1D5D25B5F20F00B757FA /* BouncyLayout in Frameworks */ = {isa = PBXBuildFile; productRef = 964D1D5C25B5F20F00B757FA /* BouncyLayout */; };
+		9678B9DB25B86F6200CC14C9 /* RealmSwift in Frameworks */ = {isa = PBXBuildFile; productRef = 9678B9DA25B86F6200CC14C9 /* RealmSwift */; };
+		9678B9E825B8703400CC14C9 /* ItemsInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9678B9E725B8703400CC14C9 /* ItemsInteractor.swift */; };
+		9678B9ED25B871B700CC14C9 /* VaultItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9678B9EC25B871B700CC14C9 /* VaultItem.swift */; };
+		9678B9FB25B8943E00CC14C9 /* BaseViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9678B9FA25B8943E00CC14C9 /* BaseViewController.swift */; };
 		96D9B00425A6411100C4D853 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 96D9B00325A6411100C4D853 /* AppDelegate.swift */; };
 		96D9B00625A6411100C4D853 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 96D9B00525A6411100C4D853 /* SceneDelegate.swift */; };
 		96D9B00825A6411100C4D853 /* ItemsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 96D9B00725A6411100C4D853 /* ItemsViewController.swift */; };
@@ -17,6 +23,8 @@
 		96D9B02625A6411300C4D853 /* SecretLockerUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 96D9B02525A6411300C4D853 /* SecretLockerUITests.swift */; };
 		96D9B03725A6426A00C4D853 /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 96D9B03625A6426A00C4D853 /* Constants.swift */; };
 		96D9B04225A648AE00C4D853 /* PhotoCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 96D9B04125A648AE00C4D853 /* PhotoCell.swift */; };
+		99FAE9EADD06E5AA1D0D1D72 /* libPods-SecretLockerTests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = E867617F0044C7552B57A9F1 /* libPods-SecretLockerTests.a */; };
+		F656899FE48A95352D07EA78 /* libPods-SecretLocker-SecretLockerUITests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = D24DCBEFB6775D878DB1B886 /* libPods-SecretLocker-SecretLockerUITests.a */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -37,6 +45,15 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		05F36122C2E902CCF62C1C27 /* Pods-SecretLockerTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SecretLockerTests.debug.xcconfig"; path = "Target Support Files/Pods-SecretLockerTests/Pods-SecretLockerTests.debug.xcconfig"; sourceTree = "<group>"; };
+		147C14EAFC4FE916A8C0570F /* libPods-SecretLocker.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-SecretLocker.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		151D7819219859BB6DB5FBED /* Pods-SecretLocker-SecretLockerUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SecretLocker-SecretLockerUITests.release.xcconfig"; path = "Target Support Files/Pods-SecretLocker-SecretLockerUITests/Pods-SecretLocker-SecretLockerUITests.release.xcconfig"; sourceTree = "<group>"; };
+		3020E16DAD2600B18A4947AA /* Pods-SecretLocker-SecretLockerUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SecretLocker-SecretLockerUITests.debug.xcconfig"; path = "Target Support Files/Pods-SecretLocker-SecretLockerUITests/Pods-SecretLocker-SecretLockerUITests.debug.xcconfig"; sourceTree = "<group>"; };
+		496C5D885D300C2650D0C849 /* Pods-SecretLocker.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SecretLocker.debug.xcconfig"; path = "Target Support Files/Pods-SecretLocker/Pods-SecretLocker.debug.xcconfig"; sourceTree = "<group>"; };
+		5F8D53FBA861B7C71C1BFA7E /* Pods-SecretLocker.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SecretLocker.release.xcconfig"; path = "Target Support Files/Pods-SecretLocker/Pods-SecretLocker.release.xcconfig"; sourceTree = "<group>"; };
+		9678B9E725B8703400CC14C9 /* ItemsInteractor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ItemsInteractor.swift; sourceTree = "<group>"; };
+		9678B9EC25B871B700CC14C9 /* VaultItem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VaultItem.swift; sourceTree = "<group>"; };
+		9678B9FA25B8943E00CC14C9 /* BaseViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseViewController.swift; sourceTree = "<group>"; };
 		96D9B00025A6411100C4D853 /* SecretLocker.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SecretLocker.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		96D9B00325A6411100C4D853 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		96D9B00525A6411100C4D853 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -53,6 +70,9 @@
 		96D9B02725A6411300C4D853 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		96D9B03625A6426A00C4D853 /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
 		96D9B04125A648AE00C4D853 /* PhotoCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PhotoCell.swift; sourceTree = "<group>"; };
+		B7CCC3F94A397690A0D3D3B2 /* Pods-SecretLockerTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SecretLockerTests.release.xcconfig"; path = "Target Support Files/Pods-SecretLockerTests/Pods-SecretLockerTests.release.xcconfig"; sourceTree = "<group>"; };
+		D24DCBEFB6775D878DB1B886 /* libPods-SecretLocker-SecretLockerUITests.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-SecretLocker-SecretLockerUITests.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		E867617F0044C7552B57A9F1 /* libPods-SecretLockerTests.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-SecretLockerTests.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -60,6 +80,9 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				9678B9DB25B86F6200CC14C9 /* RealmSwift in Frameworks */,
+				964D1D5D25B5F20F00B757FA /* BouncyLayout in Frameworks */,
+				2EF57B1BF3BCAA5D8B629423 /* libPods-SecretLocker.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -67,6 +90,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				99FAE9EADD06E5AA1D0D1D72 /* libPods-SecretLockerTests.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -74,12 +98,36 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F656899FE48A95352D07EA78 /* libPods-SecretLocker-SecretLockerUITests.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		7C300FE8D6C28721E792C564 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				147C14EAFC4FE916A8C0570F /* libPods-SecretLocker.a */,
+				D24DCBEFB6775D878DB1B886 /* libPods-SecretLocker-SecretLockerUITests.a */,
+				E867617F0044C7552B57A9F1 /* libPods-SecretLockerTests.a */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		7E4CCC950CA3D38ADE8895BA /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				496C5D885D300C2650D0C849 /* Pods-SecretLocker.debug.xcconfig */,
+				5F8D53FBA861B7C71C1BFA7E /* Pods-SecretLocker.release.xcconfig */,
+				3020E16DAD2600B18A4947AA /* Pods-SecretLocker-SecretLockerUITests.debug.xcconfig */,
+				151D7819219859BB6DB5FBED /* Pods-SecretLocker-SecretLockerUITests.release.xcconfig */,
+				05F36122C2E902CCF62C1C27 /* Pods-SecretLockerTests.debug.xcconfig */,
+				B7CCC3F94A397690A0D3D3B2 /* Pods-SecretLockerTests.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
 		96D9AFF725A6411100C4D853 = {
 			isa = PBXGroup;
 			children = (
@@ -87,6 +135,8 @@
 				96D9B01925A6411300C4D853 /* SecretLockerTests */,
 				96D9B02425A6411300C4D853 /* SecretLockerUITests */,
 				96D9B00125A6411100C4D853 /* Products */,
+				7E4CCC950CA3D38ADE8895BA /* Pods */,
+				7C300FE8D6C28721E792C564 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -106,6 +156,9 @@
 				96D9B00325A6411100C4D853 /* AppDelegate.swift */,
 				96D9B00525A6411100C4D853 /* SceneDelegate.swift */,
 				96D9B00725A6411100C4D853 /* ItemsViewController.swift */,
+				9678B9FA25B8943E00CC14C9 /* BaseViewController.swift */,
+				9678B9E725B8703400CC14C9 /* ItemsInteractor.swift */,
+				9678B9EC25B871B700CC14C9 /* VaultItem.swift */,
 				96D9B04125A648AE00C4D853 /* PhotoCell.swift */,
 				96D9B00925A6411100C4D853 /* Main.storyboard */,
 				96D9B03625A6426A00C4D853 /* Constants.swift */,
@@ -141,6 +194,7 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 96D9B02A25A6411300C4D853 /* Build configuration list for PBXNativeTarget "SecretLocker" */;
 			buildPhases = (
+				59E1161A30087FC14A757DAB /* [CP] Check Pods Manifest.lock */,
 				96D9AFFC25A6411100C4D853 /* Sources */,
 				96D9AFFD25A6411100C4D853 /* Frameworks */,
 				96D9AFFE25A6411100C4D853 /* Resources */,
@@ -150,6 +204,10 @@
 			dependencies = (
 			);
 			name = SecretLocker;
+			packageProductDependencies = (
+				964D1D5C25B5F20F00B757FA /* BouncyLayout */,
+				9678B9DA25B86F6200CC14C9 /* RealmSwift */,
+			);
 			productName = SecretLocker;
 			productReference = 96D9B00025A6411100C4D853 /* SecretLocker.app */;
 			productType = "com.apple.product-type.application";
@@ -158,6 +216,7 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 96D9B02D25A6411300C4D853 /* Build configuration list for PBXNativeTarget "SecretLockerTests" */;
 			buildPhases = (
+				E7589DAA006D4F5832AFFAA4 /* [CP] Check Pods Manifest.lock */,
 				96D9B01225A6411300C4D853 /* Sources */,
 				96D9B01325A6411300C4D853 /* Frameworks */,
 				96D9B01425A6411300C4D853 /* Resources */,
@@ -176,6 +235,7 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 96D9B03025A6411300C4D853 /* Build configuration list for PBXNativeTarget "SecretLockerUITests" */;
 			buildPhases = (
+				24CDC5A4DCE5EA0AB5FBCD5E /* [CP] Check Pods Manifest.lock */,
 				96D9B01D25A6411300C4D853 /* Sources */,
 				96D9B01E25A6411300C4D853 /* Frameworks */,
 				96D9B01F25A6411300C4D853 /* Resources */,
@@ -221,6 +281,10 @@
 				Base,
 			);
 			mainGroup = 96D9AFF725A6411100C4D853;
+			packageReferences = (
+				964D1D5B25B5F20F00B757FA /* XCRemoteSwiftPackageReference "BouncyLayout" */,
+				9678B9D925B86F6200CC14C9 /* XCRemoteSwiftPackageReference "realm-cocoa" */,
+			);
 			productRefGroup = 96D9B00125A6411100C4D853 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -259,14 +323,86 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		24CDC5A4DCE5EA0AB5FBCD5E /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-SecretLocker-SecretLockerUITests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		59E1161A30087FC14A757DAB /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-SecretLocker-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		E7589DAA006D4F5832AFFAA4 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-SecretLockerTests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		96D9AFFC25A6411100C4D853 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 				96D9B00825A6411100C4D853 /* ItemsViewController.swift in Sources */,
+				9678B9ED25B871B700CC14C9 /* VaultItem.swift in Sources */,
 				96D9B04225A648AE00C4D853 /* PhotoCell.swift in Sources */,
 				96D9B03725A6426A00C4D853 /* Constants.swift in Sources */,
+				9678B9E825B8703400CC14C9 /* ItemsInteractor.swift in Sources */,
+				9678B9FB25B8943E00CC14C9 /* BaseViewController.swift in Sources */,
 				96D9B00425A6411100C4D853 /* AppDelegate.swift in Sources */,
 				96D9B00625A6411100C4D853 /* SceneDelegate.swift in Sources */,
 			);
@@ -441,11 +577,14 @@
 		};
 		96D9B02B25A6411300C4D853 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 496C5D885D300C2650D0C849 /* Pods-SecretLocker.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 2U44HW5B4A;
+				EXCLUDED_ARCHS = "";
+				"EXCLUDED_ARCHS[sdk=iphonesimulator*]" = arm64;
 				INFOPLIST_FILE = SecretLocker/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -460,11 +599,13 @@
 		};
 		96D9B02C25A6411300C4D853 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 5F8D53FBA861B7C71C1BFA7E /* Pods-SecretLocker.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 2U44HW5B4A;
+				"EXCLUDED_ARCHS[sdk=iphonesimulator*]" = "";
 				INFOPLIST_FILE = SecretLocker/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -479,6 +620,7 @@
 		};
 		96D9B02E25A6411300C4D853 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 05F36122C2E902CCF62C1C27 /* Pods-SecretLockerTests.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
@@ -501,6 +643,7 @@
 		};
 		96D9B02F25A6411300C4D853 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = B7CCC3F94A397690A0D3D3B2 /* Pods-SecretLockerTests.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
@@ -523,6 +666,7 @@
 		};
 		96D9B03125A6411300C4D853 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 3020E16DAD2600B18A4947AA /* Pods-SecretLocker-SecretLockerUITests.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
@@ -543,6 +687,7 @@
 		};
 		96D9B03225A6411300C4D853 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 151D7819219859BB6DB5FBED /* Pods-SecretLocker-SecretLockerUITests.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
@@ -601,6 +746,38 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		964D1D5B25B5F20F00B757FA /* XCRemoteSwiftPackageReference "BouncyLayout" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/roberthein/BouncyLayout.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 2.3.1;
+			};
+		};
+		9678B9D925B86F6200CC14C9 /* XCRemoteSwiftPackageReference "realm-cocoa" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/realm/realm-cocoa";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 10.5.1;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		964D1D5C25B5F20F00B757FA /* BouncyLayout */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 964D1D5B25B5F20F00B757FA /* XCRemoteSwiftPackageReference "BouncyLayout" */;
+			productName = BouncyLayout;
+		};
+		9678B9DA25B86F6200CC14C9 /* RealmSwift */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 9678B9D925B86F6200CC14C9 /* XCRemoteSwiftPackageReference "realm-cocoa" */;
+			productName = RealmSwift;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = 96D9AFF825A6411100C4D853 /* Project object */;
 }

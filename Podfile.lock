@@ -1,0 +1,24 @@
+PODS:
+  - ANActivityIndicator (1.2.0)
+  - RNCryptor (5.1.0)
+  - Tatsi (1.2.1)
+
+DEPENDENCIES:
+  - ANActivityIndicator
+  - RNCryptor (~> 5.0)
+  - Tatsi
+
+SPEC REPOS:
+  trunk:
+    - ANActivityIndicator
+    - RNCryptor
+    - Tatsi
+
+SPEC CHECKSUMS:
+  ANActivityIndicator: 44a996931d0c554cf157b31056603b23bbdbe76a
+  RNCryptor: a369134686cd2ad391323cc856b62e591193ba79
+  Tatsi: 12ac525e0e8477645d707d4f356f85cb60182f80
+
+PODFILE CHECKSUM: fab6943e4b81cbfe9dbb7188c6d2576c7d763027
+
+COCOAPODS: 1.10.1
