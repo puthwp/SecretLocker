@@ -14,6 +14,7 @@ class BaseViewController: UIViewController {
                                           animationType: .pacman,
                                           color: .white,
                                           padding: 0)
+    var blurEffectView: UIVisualEffectView?
     func showLoading(){
         loading.center = view.center
         view.addSubview(loading)
@@ -23,5 +24,17 @@ class BaseViewController: UIViewController {
     func hideLoading(){
         loading.removeFromSuperview()
         loading.stopAnimating()
+    }
+    
+    func blinding(){
+        let blurEffect = UIBlurEffect(style: .dark)
+        blurEffectView = UIVisualEffectView(effect: blurEffect)
+        blurEffectView?.frame = self.view.bounds
+        blurEffectView?.autoresizingMask = [.flexibleHeight, .flexibleWidth]
+        view.addSubview(blurEffectView ?? UIView())
+    }
+    
+    func unblind(){
+        blurEffectView?.removeFromSuperview()
     }
 }

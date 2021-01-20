@@ -8,12 +8,15 @@
 
 /* Begin PBXBuildFile section */
 		2EF57B1BF3BCAA5D8B629423 /* libPods-SecretLocker.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 147C14EAFC4FE916A8C0570F /* libPods-SecretLocker.a */; };
+		961B142625B8AF710007DBAA /* LockViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 961B142525B8AF710007DBAA /* LockViewController.swift */; };
 		964D1D5D25B5F20F00B757FA /* BouncyLayout in Frameworks */ = {isa = PBXBuildFile; productRef = 964D1D5C25B5F20F00B757FA /* BouncyLayout */; };
 		9678B9DB25B86F6200CC14C9 /* RealmSwift in Frameworks */ = {isa = PBXBuildFile; productRef = 9678B9DA25B86F6200CC14C9 /* RealmSwift */; };
 		9678B9E825B8703400CC14C9 /* ItemsInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9678B9E725B8703400CC14C9 /* ItemsInteractor.swift */; };
 		9678B9ED25B871B700CC14C9 /* VaultItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9678B9EC25B871B700CC14C9 /* VaultItem.swift */; };
 		9678B9FB25B8943E00CC14C9 /* BaseViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9678B9FA25B8943E00CC14C9 /* BaseViewController.swift */; };
 		9678BA0025B89BBD00CC14C9 /* ItemsPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9678B9FF25B89BBD00CC14C9 /* ItemsPresenter.swift */; };
+		969C296F25B8D849008E1205 /* typing.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 969C296E25B8D849008E1205 /* typing.mp3 */; };
+		969C297A25B8D850008E1205 /* unlock.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 969C297925B8D850008E1205 /* unlock.mp3 */; };
 		96D9B00425A6411100C4D853 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 96D9B00325A6411100C4D853 /* AppDelegate.swift */; };
 		96D9B00625A6411100C4D853 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 96D9B00525A6411100C4D853 /* SceneDelegate.swift */; };
 		96D9B00825A6411100C4D853 /* ItemsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 96D9B00725A6411100C4D853 /* ItemsViewController.swift */; };
@@ -52,10 +55,13 @@
 		3020E16DAD2600B18A4947AA /* Pods-SecretLocker-SecretLockerUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SecretLocker-SecretLockerUITests.debug.xcconfig"; path = "Target Support Files/Pods-SecretLocker-SecretLockerUITests/Pods-SecretLocker-SecretLockerUITests.debug.xcconfig"; sourceTree = "<group>"; };
 		496C5D885D300C2650D0C849 /* Pods-SecretLocker.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SecretLocker.debug.xcconfig"; path = "Target Support Files/Pods-SecretLocker/Pods-SecretLocker.debug.xcconfig"; sourceTree = "<group>"; };
 		5F8D53FBA861B7C71C1BFA7E /* Pods-SecretLocker.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SecretLocker.release.xcconfig"; path = "Target Support Files/Pods-SecretLocker/Pods-SecretLocker.release.xcconfig"; sourceTree = "<group>"; };
+		961B142525B8AF710007DBAA /* LockViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LockViewController.swift; sourceTree = "<group>"; };
 		9678B9E725B8703400CC14C9 /* ItemsInteractor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ItemsInteractor.swift; sourceTree = "<group>"; };
 		9678B9EC25B871B700CC14C9 /* VaultItem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VaultItem.swift; sourceTree = "<group>"; };
 		9678B9FA25B8943E00CC14C9 /* BaseViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseViewController.swift; sourceTree = "<group>"; };
 		9678B9FF25B89BBD00CC14C9 /* ItemsPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ItemsPresenter.swift; sourceTree = "<group>"; };
+		969C296E25B8D849008E1205 /* typing.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; name = typing.mp3; path = ../../../Downloads/typing.mp3; sourceTree = "<group>"; };
+		969C297925B8D850008E1205 /* unlock.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; name = unlock.mp3; path = ../../../Downloads/unlock.mp3; sourceTree = "<group>"; };
 		96D9B00025A6411100C4D853 /* SecretLocker.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SecretLocker.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		96D9B00325A6411100C4D853 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		96D9B00525A6411100C4D853 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -164,10 +170,13 @@
 				9678B9EC25B871B700CC14C9 /* VaultItem.swift */,
 				96D9B04125A648AE00C4D853 /* PhotoCell.swift */,
 				96D9B00925A6411100C4D853 /* Main.storyboard */,
+				961B142525B8AF710007DBAA /* LockViewController.swift */,
 				96D9B03625A6426A00C4D853 /* Constants.swift */,
 				96D9B00C25A6411200C4D853 /* Assets.xcassets */,
 				96D9B00E25A6411200C4D853 /* LaunchScreen.storyboard */,
 				96D9B01125A6411200C4D853 /* Info.plist */,
+				969C296E25B8D849008E1205 /* typing.mp3 */,
+				969C297925B8D850008E1205 /* unlock.mp3 */,
 			);
 			path = SecretLocker;
 			sourceTree = "<group>";
@@ -307,6 +316,8 @@
 				96D9B01025A6411200C4D853 /* LaunchScreen.storyboard in Resources */,
 				96D9B00D25A6411200C4D853 /* Assets.xcassets in Resources */,
 				96D9B00B25A6411100C4D853 /* Main.storyboard in Resources */,
+				969C296F25B8D849008E1205 /* typing.mp3 in Resources */,
+				969C297A25B8D850008E1205 /* unlock.mp3 in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -401,6 +412,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				96D9B00825A6411100C4D853 /* ItemsViewController.swift in Sources */,
+				961B142625B8AF710007DBAA /* LockViewController.swift in Sources */,
 				9678B9ED25B871B700CC14C9 /* VaultItem.swift in Sources */,
 				96D9B04225A648AE00C4D853 /* PhotoCell.swift in Sources */,
 				9678BA0025B89BBD00CC14C9 /* ItemsPresenter.swift in Sources */,
